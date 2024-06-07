@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edittext_hint"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et1"
+                android:layout_marginTop="16dp"
+                android:hint="@string/edittext_hint"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint" />
+
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et2"
+                android:layout_marginTop="16dp"
+                android:hint="@string/edittext_hint"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint" />
+
+            <Button
+                android:id="@+id/btCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et3"
+                android:layout_marginTop="16dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btCalculate"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

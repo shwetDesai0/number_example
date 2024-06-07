@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyNumberApplication</string>
+    <string name="edittext_hint">Enter numbers separated by commas</string>
+</resources>
